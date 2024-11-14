@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="odev_sukruCan_Alkan_21010310019.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:odev_sukruCan_Alkan_21010310019">
+
+    <Shell.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Color="#A7C6ED" Offset="0.0" />
+            <GradientStop Color="#B9EBC8" Offset="0.5" />
+            <GradientStop Color="#FFFFFF" Offset="1.0" />
+        </LinearGradientBrush>
+    </Shell.Background>
+
+    <Shell.ToolbarItems>
+        <ToolbarItem Clicked="menu_clicked" />
+    </Shell.ToolbarItems>
+
+    <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+
+    <FlyoutItem Title="Kredi Hesaplama" Route="KrediHesap">
+        <ShellContent ContentTemplate="{DataTemplate local:KrediHesap}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Vücut Kitle İndeksi" Route="kitleEndeksi">
+        <ShellContent ContentTemplate="{DataTemplate local:kitleEndeksi}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Renk Seçici" Route="renk">
+        <ShellContent ContentTemplate="{DataTemplate local:renk}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Notlar" Route="Notlar">
+        <ShellContent ContentTemplate="{DataTemplate local:Notlar}" />
+    </FlyoutItem>
+
+</Shell>

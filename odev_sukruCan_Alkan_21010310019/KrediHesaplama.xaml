@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="odev_sukruCan_Alkan_21010310019.KrediHesaplama">
+    <VerticalStackLayout>
+        <Label 
+            Text="Aasdşksalkdlsad"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button VerticalOptions="Center" BackgroundColor="Black" WidthRequest="100" HeightRequest="100"> </Button>
+    </VerticalStackLayout>
+</ContentView>
